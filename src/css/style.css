@@ -1,0 +1,320 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+:focus,
+:active {
+  outline: none;
+}
+a:focus,
+a:active {
+  outline: none;
+}
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+input::-ms-clear {
+  display: none;
+}
+/*
+
+input::-moz-placeholder,
+input::-webkit-input-placeholder { 
+  color: #bdae82; 
+}
+*/
+button {
+  cursor: pointer;
+}
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+a,
+a:visited {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+ul li {
+  list-style: none;
+}
+img {
+  vertical-align: top;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+:root {
+  --dark-color: #22254b;
+  --light-color: #373b69;
+  --search-color: #7378c5;
+  --background-header: #14274E;
+
+  --font-white: #eee;
+  --font-lightgreen: lightgreen;
+  --font-lightskyblue: lightskyblue;  
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  background-color: var(--light-color);
+
+  height: 70px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  max-width: 1280px;
+
+  background-color: var(--dark-color);
+  font-family: 'Poppins', sans-serif;
+
+  margin: 0 auto;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.title {
+  display: flex;
+  flex-wrap: wrap;
+
+  width: 760px;
+  padding: 20px 20px 0;
+  margin: 0 auto;
+}
+
+.flex-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.flex-lang {
+  display: flex;
+}
+
+.micro,
+.language,
+.sound,
+.clean,
+.hide {
+  width: 60px;
+  height: 60px;
+  background-color: transparent;
+}
+
+.micro:hover,
+.language:hover,
+.sound:hover,
+.clean:hover,
+.hide:hover {
+  border: 2px solid var(--search-color);
+  border-radius: 25px;
+}
+
+h1 {
+  font-family: inherit;
+  font-size: 40px;
+  text-align: left;
+  color: var(--search-color);
+}
+
+h2 {
+  color: var(--search-color);
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+
+  margin: 0;
+}
+
+.flex_key {
+	width: 100%;
+  padding: 20px;
+}
+
+.text {
+	display: block;
+	width: 760px;
+	height: 50%;
+  background-color: var(--light-color);
+  color: var(--search-color);
+  border: 5px solid rgba(255, 255, 255, 0.2);
+  border-radius: 12px;
+
+  padding: 10px;
+  margin: 20px auto;
+}
+
+.key_body {
+  display: flex;
+  flex-direction: column;
+/*  border: 5px solid rgba(255, 255, 255, 0.2); 
+/*  background-color: rgba(255, 255, 255, 0.2);*/
+  border-radius: 15px;
+
+  width: 760px;
+  height: 400px;
+
+  margin: 10px auto;
+}
+
+.key_line {
+  display: flex;
+/*  background-color: rgba(255, 255, 255, 0.2);*/
+}
+
+.btn_base,
+.btn_base70 {
+  width: 50px;
+  height: 43px;
+  padding: 6px 5px;
+  margin: 2px;
+  text-align: center;
+  font-size: 16px;
+
+  border: 3px solid rgba(255, 255, 255, 0.2);
+  background-color: transparent;
+  border-radius: 10px;
+  color: lightgreen;
+  cursor: pointer;
+}
+
+.capslock,
+.shift {
+  border-color: lightgreen;	
+}
+
+.btn_base70 {
+  width: 115px;
+}  
+
+.btn_baseSpace {
+  width: 304px;	
+}
+
+.btn_base:hover {
+/*  opacity: 0.6;	*/
+  border-color: lightgreen;
+}
+
+@media (max-width: 799px) {
+	h1 {
+	  font-size: 30px;
+	}
+
+  .micro,
+  .language,
+  .sound,
+  .clean,
+  .hide {
+    width: 30px;
+    height: 30px;
+  }
+
+    .title {
+  	width: 380px;
+  }	
+
+	.flex_key {
+	  padding: 20px 0px;
+	}
+
+	.text {
+		width: 380px;
+  	height: 80px;
+
+    border: 3px solid rgba(255, 255, 255, 0.2); 
+    border-radius: 8px;
+
+  	font-size: 10px;
+		margin: auto;
+	}
+
+	.key_body {
+	  width: 380px;
+	  height: 123px;
+
+/*    border: 2px solid rgba(255, 255, 255, 0.2); */
+    border-radius: 8px;
+	  margin: 20px auto;
+	}
+
+	.key_line {
+	  display: flex;
+	}
+
+	.btn_base,
+	.btn_base70 {
+	  width: 25px;
+	  height: 23px;
+	  padding: 5px 0;
+	  margin: 1px;
+	  border: 2px solid rgba(255, 255, 255, 0.2);
+	  border-radius: 6px;
+	  font-size: 8px;
+	}
+
+	.btn_base70 {
+	  width: 60px;
+	}  
+
+	.btn_baseSpace {
+	  width: 130px;	
+	}
+
+	.btn_base:hover {
+	  border: 2px solid lightgreen;
+	}
+}
